@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="divTable.css">
+
+
+
+</head>
+<body>
+
+<div class="divTable" >
+
+    <div class="table searchform ">
+       <div class="rule col-md-1 box ">
+            <span class="label">
+
+                   Amount
+            <input type="text" name="sotien" value="" id="amount">
+
+
+            </span>
+       </div>
+        <div class="rule col-md-2 box ">
+            <span class="label">
+               FromCurrent
+                <select class="form-box" id="batdau" >
+                      <option value="VND" > VND</option>
+                      <option value="USD" >USD</option>
+                </select>
+            </span>
+        </div>
+        <div class="rule col-md-2 box ">
+            <span class="label">
+ToCurrent
+                <select class="form-box" id="ketthuc">
+                    <option value="USD" >USD</option>
+                    <option value="VND" > VND</option>
+
+                </select>
+            </span>
+        </div>
+        <div class="rule col-md-3 box ">
+
+                <button type="button" class="label2" onclick='showMessenge();'> chuyen tien </button>
+            <script src="chuyentien.js">
+            </script>
+        </div>
+
+    </div>
+    <div class="ketqua">
+        <div class="col-md-4 box">
+            <p class="resulta">
+                Result
+            </p>
+
+            </div>
+        <div class="rule col-md-1 box ">
+            <div class="label3">
+
+                 <span class="resulta x"  id="hienthi"> </span>
+
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

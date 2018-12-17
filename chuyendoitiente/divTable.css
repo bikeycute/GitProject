@@ -1,0 +1,88 @@
+.divTable{
+
+    max-width: 1200px;
+height: 700px;
+
+    font-family: sans-serif;
+
+    border-radius: 10px;
+}
+.ketqua{
+
+    position: relative;
+    height: 80px;
+    padding: 5px 5px 5px 5px;
+}
+.table{
+
+position: relative;
+    height: 80px;
+    padding: 5px 5px 5px 5px;
+    width: auto;
+}
+.searchform{
+    box-sizing: border-box;
+}
+.rule{
+    display: block;
+}
+.col-md-1 {
+    width: 25%;
+}
+.col-md-2 {
+    width: 10%;
+}
+.col-md-3 {
+    width: 10%;
+}
+.col-md-4 {
+    width: 5%;
+}
+.box{
+    float: left;
+    background-color: white;
+   height: 65px;
+    padding: 0px 4px ;
+    margin-bottom: 6px;
+    margin-left: 5px;
+}
+.label{
+    width: 60px;
+    display: inline-block;
+padding-left: 10px;
+    padding-top: 10px;
+    font-size: medium;
+
+}
+.form-control{
+    width: 80px;
+    background-color: white;
+    height: 100%;
+    margin: 0 0 0 0;
+    display: inline-block;
+    float: left;
+    padding-left: 5px;
+}
+.input{
+    background-color: black;
+}
+.form-box{
+    width: 100px;
+    float: left;
+    margin-left: 5px;
+}
+.label2
+{
+width: 100px;
+
+
+    margin-top: 20px;
+}
+.resulta{
+   margin-top: 25px;
+    margin-left: 10px;
+
+}
+.label3{
+    margin-top: 25px;
+}
