@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="baitap.js"></script>
+</head>
+<body>
+       <h3>Caro Game Simple</h3>
+       <p id="carogame">
+       <input value="changeValue" type="button" onclick="changeValue()"/>
+<script>
+       var b = document.getElementById("carogame");
+       var board = [];
+       var data = "";
+       for (var i=0; i<6; i++){
+           board[i] = [0, 0, 0, 0, 0,0,0];
+       }
+       for (var i=0; i<6;i++){
+           data += "<br/>";
+           for (var j=0; j<5; j++){
+                data = board[i][j] + "&nbsp;&nbsp;";
+
+           }
+       }
+       data += "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>";
+       b.innerHTML = data;
+</script>
+</body>
+</html>
