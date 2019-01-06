@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input id="ai" type="number">
+    <button id="chuyendoi" onclick='giaitri()' type="button">tinh so ngay</button>
+    <br>
+    <span id="result" ></span>
+    <script>
+        function giaitri() {
+            var value = document.getElementById('ai').value;
+            var hienthi1='30 ngay';
+            var hienthi2=('28 ngay'+'&'+'30 ngay');
+            var hienthi3='31 ngay';
+
+            switch (value) {
+                case "4":
+                case"6":
+                case "9":
+                case "11":
+                    document.getElementById('result').innerHTML=(hienthi1);
+                    break;
+                case "2":
+                    document.getElementById('result').innerHTML=(hienthi2);
+                    break;
+                case "1":
+                case"3":
+                case "5":
+                case "10":
+                case "12":
+                    document.getElementById('result').innerHTML=(hienthi3);
+                    break;
+                default:
+                    alert('Vui long nhap duoi 12 thang');
+            }
+        }
+    </script>
+</form>
+</body>
+</html>
