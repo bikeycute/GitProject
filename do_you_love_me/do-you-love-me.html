@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Do you love me</h3>
+     <input type="button"  value="yes" onclick="message()">
+     <input type="button"  id="troll" value="no"  onmousemove="next()">
+<script>
+    function message() {
+        alert(" he he");
+    }
+    var obj=null;
+    function init() {
+        obj = document.getElementById('troll');
+        obj.style.position='relative';
+        spaceW= screen.height-obj.height;
+        spaceH= screen.width-obj.width;
+    }
+    function next() {
+        obj.style.top = Math.round(Math.random()*spaceW) +"px";
+        obj.style.left = Math.round(Math.random()*spaceH) +"px";
+    }
+    window.onload = init;
+</script>
+</body>
