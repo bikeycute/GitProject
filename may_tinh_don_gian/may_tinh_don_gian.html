@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bang_tinh.css">
+
+</head>
+<body>
+<div class="bangtinh">
+ <div class="num">
+     <input class="linebox" width="320px" id="Result" type="text">
+ </div>
+ <div class="nut">
+     <input class="box" type="button" value="1" onclick="Result.value+=this.value">
+     <input class="box" type="button" value="2" onclick="Result.value+=this.value">
+     <input class="box" type="button" value="3" onclick="Result.value+=this.value">
+     <input class="box" type="button" value="+" onclick="Result.value+=this.value">
+     <br>
+     <input class="box" type="button" value="4" onclick="Result.value+=this.value">
+     <input class="box" type="button" value="5" onclick="Result.value+=this.value">
+     <input class="box" type="button" value="6" onclick="Result.value+=this.value">
+     <input class="box" type="button" value="-" onclick="Result.value+=this.value">
+     <br>
+     <input class="box" type="button" value="7" onclick="Result.value+=this.value">
+     <input class="box" type="button" value="8" onclick="Result.value+=this.value">
+     <input class="box" type="button" value="9" onclick="Result.value+=this.value">
+     <input class="box" type="button" value="*" onclick="Result.value+=this.value">
+     <br>
+     <input class="box" type="button" value="C" onclick="Result.value=''">
+     <input class="box" type="button" value="0" onclick="Result.value+=this.value" id="no">
+     <input class="box" type="button" value="=" onclick="Result.value = eval(Result.value)" id="equal">
+     <input class="box" type="button" value="/" onclick="Result.value+=this.value">
+     <br>
+
+
+ </div>
+
+</div>
+</body>
+</html>
