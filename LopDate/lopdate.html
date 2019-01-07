@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ function Mydate(day,month,year) {
+
+      this.day = day;
+      this.month=month;
+      this.year=year;
+
+      this.getDay= function () {
+          return this.day;
+      }
+
+      this.getMonth = function () {
+          return this.month;
+      }
+
+      this.getYear = function () {
+          return this.year;
+      }
+      this.setDay = function (day) {
+          this.day = day;
+      }
+      this.setMonth= function (month) {
+          this.month=month;
+      }
+      this.setYear=function (year) {
+          this.year=year;
+      }
+      this.setDate = function () {
+          this.day = prompt("ngay moi la");
+          this.month=prompt("thang moi la:");
+          this.year =prompt("nam moi la:");
+      }
+      this.toStr= function () {
+          document.write(this.day+"/" + this.month+"/"  + this.year);
+      }
+  }
+  var calendar = new Mydate(2,2,2019);
+  var day = calendar.getDay();
+  var month = calendar.getMonth();
+  var year = calendar.getYear();
+
+  calendar.setDate();
+  calendar.toStr();
+
+</script>
+</body>
+</html>
