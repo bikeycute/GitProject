@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+</head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<body onload="docReady()">
+<textarea name="" id="show" cols="30" rows="6"></textarea>
+<script>
+    var strs = [
+        "Hello toi la nguoi dep trai"
+    ];
+    var show = $('#show');
+    str = strs[0],
+        len = str.length,
+        on = false;
+
+    function move(evt) {
+        var l = show.val().length % len + 1;
+
+        if (evt.which == 21) {
+
+            str = strs[(on = !on) | 0];
+            len = str.length;
+        }
+        show.val(str.substr(0, l));
+        evt.preventDefault();
+    }
+    function docReady() {
+        window.addEventListener('keydown', move);
+    }
+</script>
+</body>
+</html>
